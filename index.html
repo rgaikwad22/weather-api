@@ -1,0 +1,133 @@
+<!doctype html>
+<!-- If multi-language site, reconsider usage of html lang declaration here. -->
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Weather API Task</title>
+
+  <!-- 120 word description for SEO purposes goes here. Note: Usage of lang tag. -->
+  <meta name="description" lang="en" content="">
+
+  <!-- Keywords to help with SEO go here. Note: Usage of lang tag.  -->
+  <meta name="keywords" lang="en" content="">
+
+  <!-- View-port Basics: http://mzl.la/VYREaP -->
+  <!-- This meta tag is used for mobile device to display the page without any zooming,
+        so how much the device is able to fit on the screen is what's shown initially. 
+        Remove comments from this tag, when you want to apply media queries to the website. -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <!-- To adhear no-cache for Chrome -->
+  <!-- <meta http-equiv="cache-control" content="no-store, no-cache, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-store, no-cache" />
+    <meta http-equiv="Expires" content="0" /> -->
+
+  <!-- Place favicon.ico in the root directory: mathiasbynens.be/notes/touch-icons -->
+  <link rel="shortcut icon" href="favicon.ico" />
+
+  <!--font-awesome link for icons-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- Default style-sheet is for 'media' type screen (color computer display).  -->
+  <link rel="stylesheet" media="screen" href="assets/css/style.css">
+</head>
+
+<body>
+  <!--container starts here-->
+  <div class="container">
+    <!--main starts here-->
+    <main>
+      <section class="Weather-app-section">
+        <div class="wrapper">
+          <h1>Weather App</h1>
+          <div class="card-container">
+            <figure class="background-img">
+              <img
+                src="https://img.freepik.com/free-vector/gorgeous-clouds-background-with-blue-sky-design_1017-25501.jpg?w=740&t=st=1692775979~exp=1692776579~hmac=b7e2a7fb35e5a11557c8b53e408d6204758bfd4f156b48fcba23ca5756d90893"
+                alt="Sky Image">
+            </figure>
+            <form action="#FIXME">
+              <div class="input-grp">
+                <input type="text" placeholder="Enter a city name" class="city-input">
+                <button type="submit" class="submit-btn">Submit</button>
+              </div>
+            </form>
+          </div>
+
+          <div class="weather">
+            <figure class="weather-img">
+              <img src="assets/images/rain.png" alt="Rain Image">
+            </figure>
+            <span class="temperature">25°C</span>
+            <h2 class="city-name">London</h2>
+
+            <ul class="details">
+              <li>
+                <figure>
+                  <img src="assets/images/humidity.png" alt="">
+                </figure>
+                <div>
+                  <span class="humidity">50%</span>
+                  <span>Humidity</span>
+                </div>
+              </li>
+              <li>
+                <figure>
+                  <img src="assets/images/wind.png" alt="">
+                </figure>
+                <div>
+                  <span class="pressure">1012</span>
+                  <span>Pressure</span>
+                </div>
+              </li>
+              <li>
+                <figure>
+                  <img src="assets/images/wind.png" alt="">
+                </figure>
+                <div>
+                  <span class="wind-speed">15 kmph</span>
+                  <span>Wind Speed</span>
+                </div>
+              </li>
+              <li>
+                <figure class="weather-condition">
+                  <img src="assets/images/drizzle.png" alt="">
+                </figure>
+                <div>
+                  <span class="weather-main">Drizzle</span>
+                  <span class="weather-desc">light intensity drizzle</span>
+                </div>
+              </li>
+              <li>
+                <figure>
+                  <img src="assets/images/clouds.png" alt="">
+                </figure>
+                <div>
+                  <span class="clouds">90%</span>
+                  <span>Clouds</span>
+                </div>
+              </li>
+              <li>
+                <figure>
+                  <img src="assets/images/pngwing.png" alt="">
+                </figure>
+                <div>
+                  <span class="visibility">10000</span>
+                  <span>Visibility</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <span class="error-text"></span>
+        </div>
+      </section>
+    </main>
+    <!--main ends here-->
+  </div>
+  <!--container ends here-->
+  <script src="assets/js/script.js"></script>
+</body>
+
+</html>
